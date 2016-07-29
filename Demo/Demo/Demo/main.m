@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MLAppServiceLoader/MLAppServiceLoader.h>
+#import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([MLSOAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
