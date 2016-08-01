@@ -32,7 +32,7 @@
 - (BOOL)respondsToSelector:(SEL)aSelector {
     BOOL canResponse = [self methodForSelector:aSelector] != nil && [self methodForSelector:aSelector] != _objc_msgForward;
     if (! canResponse && [[self appDelegateMethods] containsObject:NSStringFromSelector(aSelector)]) {
-        canResponse = canResponse || [[MLAppServiceManager sharedManager] proxyCanResponseToSelector:aSelector];
+        canResponse = [[MLAppServiceManager sharedManager] proxyCanResponseToSelector:aSelector];
     }
     return canResponse;
 }

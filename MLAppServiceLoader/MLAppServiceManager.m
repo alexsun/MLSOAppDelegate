@@ -94,6 +94,7 @@
             return;
         }
         
+        // check the signature
         NSString *t1 = [self objcTypesFromSignature:signature];
         NSString *t2 = [self objcTypesFromSignature:[(id)obj methodSignatureForSelector:anInvocation.selector]];
         NSAssert([t1 isEqualToString:t2],
@@ -101,6 +102,7 @@
                  Please check the return value type and arguments type.",
                  NSStringFromSelector(anInvocation.selector), obj.serviceName, obj);
         
+        // copy the invokation
         NSInvocation *invok = [NSInvocation invocationWithMethodSignature:signature];
         invok.selector = anInvocation.selector;
         // copy arguments
@@ -113,16 +115,19 @@
             [anInvocation getArgument:&argValue atIndex:i];
             [invok setArgument:&argValue atIndex:i];
         }
-        
+        // reset the target
+        invok.target = obj;
         // invoke
-        [invok invokeWithTarget:obj];
-        // get the return value
+        [invok invoke];
         
+        // get the return value
         if (returnValueBytes) {
             [invok getReturnValue:returnValueBytes];
             returnValue = returnValue || *((BOOL *)returnValueBytes);
         }
     }];
+    
+    // set return value
     if (returnValueBytes) {
         [anInvocation setReturnValue:returnValueBytes];
     }
