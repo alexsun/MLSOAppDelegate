@@ -1,0 +1,16 @@
+PODS:
+  - MLSOAppDelegate (0.0.1)
+
+DEPENDENCIES:
+  - MLSOAppDelegate (from `../`)
+
+EXTERNAL SOURCES:
+  MLSOAppDelegate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLSOAppDelegate: 721b6f35cf63336eb7a2a2ee3fab12bbc1473ef5
+
+PODFILE CHECKSUM: 9fa24ceb8c1120fdb2f7ef8daaa7f7e4cf42739f
+
+COCOAPODS: 1.0.1
