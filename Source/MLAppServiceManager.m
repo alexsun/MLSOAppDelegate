@@ -95,9 +95,7 @@
         }
         
         // check the signature
-        NSString *t1 = [self objcTypesFromSignature:signature];
-        NSString *t2 = [self objcTypesFromSignature:[(id)obj methodSignatureForSelector:anInvocation.selector]];
-        NSAssert([t1 isEqualToString:t2],
+        NSAssert([[self objcTypesFromSignature:signature] isEqualToString:[self objcTypesFromSignature:[(id)obj methodSignatureForSelector:anInvocation.selector]]],
                  @"Method signature for selector (%@) on (%@ - `%@`) is invalid. \
                  Please check the return value type and arguments type.",
                  NSStringFromSelector(anInvocation.selector), obj.serviceName, obj);

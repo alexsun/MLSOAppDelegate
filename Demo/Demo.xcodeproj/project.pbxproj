@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9DAC11A51D4A086D00F652D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11A41D4A086D00F652D7 /* main.m */; };
 		9DAC11AB1D4A086D00F652D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11AA1D4A086D00F652D7 /* ViewController.m */; };
-		9DAC11AE1D4A086D00F652D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC11AC1D4A086D00F652D7 /* Main.storyboard */; };
 		9DAC11B01D4A086D00F652D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC11AF1D4A086D00F652D7 /* Assets.xcassets */; };
 		9DAC11B31D4A086D00F652D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC11B11D4A086D00F652D7 /* LaunchScreen.storyboard */; };
 		9DAC11C01D4A0D0500F652D7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11BF1D4A0D0500F652D7 /* LoginViewController.m */; };
-		9DAC11D11D4A0F7000F652D7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11D01D4A0F7000F652D7 /* NotificationService.m */; };
 		9DAC11D81D4A11EB00F652D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11D71D4A11EB00F652D7 /* AppDelegate.m */; };
+		9DF6A0A71D586D7E00347A76 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC11D01D4A0F7000F652D7 /* NotificationService.m */; };
+		9DF6A0A81D586F3600347A76 /* RootUIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6A0A51D586C7100347A76 /* RootUIService.m */; };
 		E48EF7149D0147B3C5BBB52F /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD19D81B274BC211FD1C4026 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,6 @@
 		9DAC11A41D4A086D00F652D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DAC11A91D4A086D00F652D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9DAC11AA1D4A086D00F652D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9DAC11AD1D4A086D00F652D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DAC11AF1D4A086D00F652D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DAC11B21D4A086D00F652D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DAC11B41D4A086D00F652D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +32,8 @@
 		9DAC11D01D4A0F7000F652D7 /* NotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		9DAC11D61D4A11EB00F652D7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DAC11D71D4A11EB00F652D7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DF6A0A41D586C7100347A76 /* RootUIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootUIService.h; sourceTree = "<group>"; };
+		9DF6A0A51D586C7100347A76 /* RootUIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootUIService.m; sourceTree = "<group>"; };
 		B2BA9FE58C819578896A1574 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		FD19D81B274BC211FD1C4026 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6463FC53F93E3ECD55461A /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,19 +72,19 @@
 		9DAC11A21D4A086D00F652D7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9DAC11A31D4A086D00F652D7 /* Supporting Files */,
 				9DAC11D61D4A11EB00F652D7 /* AppDelegate.h */,
 				9DAC11D71D4A11EB00F652D7 /* AppDelegate.m */,
 				9DAC11A91D4A086D00F652D7 /* ViewController.h */,
 				9DAC11AA1D4A086D00F652D7 /* ViewController.m */,
-				9DAC11AC1D4A086D00F652D7 /* Main.storyboard */,
 				9DAC11AF1D4A086D00F652D7 /* Assets.xcassets */,
 				9DAC11B11D4A086D00F652D7 /* LaunchScreen.storyboard */,
-				9DAC11B41D4A086D00F652D7 /* Info.plist */,
-				9DAC11A31D4A086D00F652D7 /* Supporting Files */,
 				9DAC11BE1D4A0D0500F652D7 /* LoginViewController.h */,
 				9DAC11BF1D4A0D0500F652D7 /* LoginViewController.m */,
 				9DAC11CF1D4A0F7000F652D7 /* NotificationService.h */,
 				9DAC11D01D4A0F7000F652D7 /* NotificationService.m */,
+				9DF6A0A41D586C7100347A76 /* RootUIService.h */,
+				9DF6A0A51D586C7100347A76 /* RootUIService.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -91,6 +92,7 @@
 		9DAC11A31D4A086D00F652D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9DAC11B41D4A086D00F652D7 /* Info.plist */,
 				9DAC11A41D4A086D00F652D7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -180,7 +182,6 @@
 			files = (
 				9DAC11B31D4A086D00F652D7 /* LaunchScreen.storyboard in Resources */,
 				9DAC11B01D4A086D00F652D7 /* Assets.xcassets in Resources */,
-				9DAC11AE1D4A086D00F652D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,9 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DAC11D11D4A0F7000F652D7 /* NotificationService.m in Sources */,
 				9DAC11C01D4A0D0500F652D7 /* LoginViewController.m in Sources */,
+				9DF6A0A71D586D7E00347A76 /* NotificationService.m in Sources */,
 				9DAC11AB1D4A086D00F652D7 /* ViewController.m in Sources */,
+				9DF6A0A81D586F3600347A76 /* RootUIService.m in Sources */,
 				9DAC11A51D4A086D00F652D7 /* main.m in Sources */,
 				9DAC11D81D4A11EB00F652D7 /* AppDelegate.m in Sources */,
 			);
@@ -250,14 +252,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9DAC11AC1D4A086D00F652D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DAC11AD1D4A086D00F652D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9DAC11B11D4A086D00F652D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

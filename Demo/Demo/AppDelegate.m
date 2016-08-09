@@ -25,6 +25,7 @@
     
     // MLSOAppDelegate (the super) does not implement -application:didFinishLaunchingWithOptions: actually.
     // It forwards the message to all registered services.
+    // You MUST call super to ensure all registered service implementation get called.
     if ([super respondsToSelector:@selector(application:didFinishLaunchingWithOptions:)]) {
         [super application:application didFinishLaunchingWithOptions:launchOptions];
     }

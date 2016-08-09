@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		9D6970E41D3F25E00028E7CD /* MLSOAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6970DA1D3F25E00028E7CD /* MLSOAppDelegate.framework */; };
 		9D6970E91D3F25E00028E7CD /* MLSOAppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6970E81D3F25E00028E7CD /* MLSOAppDelegateTests.m */; };
-		9DDF17B51D52DAE0003ECE7B /* MLAppServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B11D52DAE0003ECE7B /* MLAppServiceManager.h */; };
+		9DDF17B51D52DAE0003ECE7B /* MLAppServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B11D52DAE0003ECE7B /* MLAppServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DDF17B61D52DAE0003ECE7B /* MLAppServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF17B21D52DAE0003ECE7B /* MLAppServiceManager.m */; };
-		9DDF17B71D52DAE0003ECE7B /* MLSOAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B31D52DAE0003ECE7B /* MLSOAppDelegate.h */; };
+		9DDF17B71D52DAE0003ECE7B /* MLSOAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B31D52DAE0003ECE7B /* MLSOAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DDF17B81D52DAE0003ECE7B /* MLSOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF17B41D52DAE0003ECE7B /* MLSOAppDelegate.m */; };
+		9DF6A0AB1D59856000347A76 /* MLAppServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF17B21D52DAE0003ECE7B /* MLAppServiceManager.m */; };
+		9DF6A0AC1D59856000347A76 /* MLSOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF17B41D52DAE0003ECE7B /* MLSOAppDelegate.m */; };
+		9DF6A0AF1D59856000347A76 /* MLSOAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B31D52DAE0003ECE7B /* MLSOAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DF6A0B01D59856000347A76 /* MLAppServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B11D52DAE0003ECE7B /* MLAppServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DF6A0BA1D59882800347A76 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = 9DF6A0B91D59882800347A76 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 		9DDF17B21D52DAE0003ECE7B /* MLAppServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppServiceManager.m; sourceTree = "<group>"; };
 		9DDF17B31D52DAE0003ECE7B /* MLSOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSOAppDelegate.h; sourceTree = "<group>"; };
 		9DDF17B41D52DAE0003ECE7B /* MLSOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSOAppDelegate.m; sourceTree = "<group>"; };
+		9DF6A0B51D59856000347A76 /* MLSOAppDelegateDynamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLSOAppDelegateDynamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF6A0B71D5985CA00347A76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF6A0B91D59882800347A76 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DF6A0AD1D59856000347A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +76,7 @@
 			children = (
 				9DDF17B01D52DAE0003ECE7B /* Source */,
 				9D6970DB1D3F25E00028E7CD /* MLSOAppDelegate */,
+				9DF6A0B61D5985CA00347A76 /* MLSOAppDelegateDynamic */,
 				9D6970E71D3F25E00028E7CD /* MLSOAppDelegateTests */,
 				9D6970AC1D3F1B7D0028E7CD /* Products */,
 			);
@@ -71,6 +87,7 @@
 			children = (
 				9D6970DA1D3F25E00028E7CD /* MLSOAppDelegate.framework */,
 				9D6970E31D3F25E00028E7CD /* MLSOAppDelegate.xctest */,
+				9DF6A0B51D59856000347A76 /* MLSOAppDelegateDynamic.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +120,15 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		9DF6A0B61D5985CA00347A76 /* MLSOAppDelegateDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				9DF6A0B71D5985CA00347A76 /* Info.plist */,
+				9DF6A0B91D59882800347A76 /* module.modulemap */,
+			);
+			path = MLSOAppDelegateDynamic;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -112,6 +138,15 @@
 			files = (
 				9DDF17B71D52DAE0003ECE7B /* MLSOAppDelegate.h in Headers */,
 				9DDF17B51D52DAE0003ECE7B /* MLAppServiceManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF6A0AE1D59856000347A76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF6A0AF1D59856000347A76 /* MLSOAppDelegate.h in Headers */,
+				9DF6A0B01D59856000347A76 /* MLAppServiceManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +189,24 @@
 			productReference = 9D6970E31D3F25E00028E7CD /* MLSOAppDelegate.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9DF6A0A91D59856000347A76 /* MLSOAppDelegateDynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF6A0B21D59856000347A76 /* Build configuration list for PBXNativeTarget "MLSOAppDelegateDynamic" */;
+			buildPhases = (
+				9DF6A0AA1D59856000347A76 /* Sources */,
+				9DF6A0AD1D59856000347A76 /* Frameworks */,
+				9DF6A0AE1D59856000347A76 /* Headers */,
+				9DF6A0B11D59856000347A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLSOAppDelegateDynamic;
+			productName = MLSOAppDelegate;
+			productReference = 9DF6A0B51D59856000347A76 /* MLSOAppDelegateDynamic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +238,7 @@
 			targets = (
 				9D6970D91D3F25E00028E7CD /* MLSOAppDelegate */,
 				9D6970E21D3F25E00028E7CD /* MLSOAppDelegateTests */,
+				9DF6A0A91D59856000347A76 /* MLSOAppDelegateDynamic */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +255,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF6A0B11D59856000347A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF6A0BA1D59882800347A76 /* module.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D6970E91D3F25E00028E7CD /* MLSOAppDelegateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF6A0AA1D59856000347A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF6A0AB1D59856000347A76 /* MLAppServiceManager.m in Sources */,
+				9DF6A0AC1D59856000347A76 /* MLSOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +452,52 @@
 			};
 			name = Release;
 		};
+		9DF6A0B31D59856000347A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "${TARGET_NAME}/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsun.${TARGET_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DF6A0B41D59856000347A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "${TARGET_NAME}/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsun.${TARGET_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +524,15 @@
 			buildConfigurations = (
 				9D6970EF1D3F25E00028E7CD /* Debug */,
 				9D6970F01D3F25E00028E7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF6A0B21D59856000347A76 /* Build configuration list for PBXNativeTarget "MLSOAppDelegateDynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF6A0B31D59856000347A76 /* Debug */,
+				9DF6A0B41D59856000347A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

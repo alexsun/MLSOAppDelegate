@@ -1,0 +1,6 @@
+framework module MLSOAppDelegateDynamic {
+    umbrella header "MLSOAppDelegate.h"
+
+    export *
+    module * { export * }
+}
