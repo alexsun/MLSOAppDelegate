@@ -20,10 +20,10 @@ Pod::Spec.new do |spec|
   # spec.description      = <<-DESC
   #                      DESC
 
-  spec.homepage = "https://github.com/alexsun/SOAppDelegate"
+  spec.homepage = "https://github.com/alexsun/MLSOAppDelegate"
   spec.license = 'MIT'
   spec.author = "alexsun"
-  spec.source = { :git => "https://github.com/alexsun/SOAppDelegate.git", :tag => spec.version }
+  spec.source = { :git => "https://github.com/alexsun/MLSOAppDelegate.git", :tag => spec.version }
   # spec.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   spec.ios.deployment_target = '7.0'

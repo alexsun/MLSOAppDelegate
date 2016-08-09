@@ -17,7 +17,6 @@
 		9DF6A0AC1D59856000347A76 /* MLSOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF17B41D52DAE0003ECE7B /* MLSOAppDelegate.m */; };
 		9DF6A0AF1D59856000347A76 /* MLSOAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B31D52DAE0003ECE7B /* MLSOAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DF6A0B01D59856000347A76 /* MLAppServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17B11D52DAE0003ECE7B /* MLAppServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DF6A0BA1D59882800347A76 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = 9DF6A0B91D59882800347A76 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,7 +261,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF6A0BA1D59882800347A76 /* module.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

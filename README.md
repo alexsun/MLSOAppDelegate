@@ -49,7 +49,7 @@ $ pod install
 To integrate MLSOAppDelegate into your Xcode project using Carthage, specify it in your `Carfile`:
 
 ```ogdl
-github "MLSOAppDelegate/MLSOAppDelegate" ~> 0.0.1 
+github "alexsun/MLSOAppDelegate" ~> 0.0.1 
 ```
 
 Run `carthage` to build the framework and drag the built `MLSOAppDelegate.framework` into your Xcode project.
