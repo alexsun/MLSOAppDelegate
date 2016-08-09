@@ -26,3 +26,5 @@ before_deploy:
 #   script: fastlane complete_framework_release --env deploy
 #   on:
 #     tags: true
+notifications:
+  email: false
