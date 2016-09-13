@@ -141,7 +141,7 @@ ML_EXPORT_SERVICE(notifcation)
 @end
 ```
 
-### Inherit MLSOAppDelegate class
+### MLSOAppDelegate Subclassing
 
 You may want to create subclass of MLSOAppDelegate. There is a precaution. **If you implement any UIApplicationDelegate method, DO NOT forget to call the super to ensure all the service implementation get called.**
 
